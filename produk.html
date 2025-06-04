@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Produk - CHEI STORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        marquee {
+            background-color: #eee;
+            padding: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            min-height: 400px;
+        }
+        aside {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 20px;
+        }
+        .btn-beli {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .btn-beli:hover {
+            background-color: #218838;
+        }
+        img {
+            margin-top: 10px;
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHEI STORE</h1>
+    </header>
+    <nav>
+        <a href="produk.html">Produk</a>
+        <a href="input_transaksi.html">Input Transaksi</a>
+        <a href="tentang.html">Tentang Kami</a>
+    </nav>
+    <marquee behavior="scroll" direction="left">Promo Spesial! Diskon sampai 50% hari ini!</marquee>
+    <div class="container">
+        <aside>
+            <h3>Kategori Produk</h3>
+            <ul>
+                <li>Kendaraan</li>
+                <li>Pakaian</li>
+                <li>Aksesoris</li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Daftar Produk Kendaraan</h2>
+            <ul>
+                <li>
+                    <strong>Produk 1 - Rp 500.000.000</strong><br />
+                    <a href="input_transaksi.html?produk=Produk1" class="btn-beli">Beli</a><br />
+                    <a href="fortuner.html" target="_blank">
+                        <img src="mobil1.jpg" alt="Produk 1" />
+                    </a>
+                </li>
+                <li>
+                    <strong>Produk 2 - Rp 200.000.000</strong><br />
+                    <a href="input_transaksi.html?produk=Produk2" class="btn-beli">Beli</a><br />
+                    <a href="wuling.html" target="_blank">
+                        <img src="mobil 2.jpg" alt="Produk 2" />
+                    </a>
+                </li>
+                <li>
+                    <strong>Produk 3 - Rp 3.000.000.000</strong><br />
+                    <a href="input_transaksi.html?produk=Produk3" class="btn-beli">Beli</a><br />
+                    <a href="bmw.html" target="_blank">
+                        <img src="mobil3.jpg" alt="Produk 3" />
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        &copy; 2025 CHEI STORE
+    </footer>
+</body>
+</html>
